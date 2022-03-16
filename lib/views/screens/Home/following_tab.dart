@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_tutorial/Components/custom_button_inter.dart';
+import 'package:tiktok_tutorial/Components/rotated_image.dart';
+import 'package:tiktok_tutorial/Routes/routes.dart';
+import 'package:tiktok_tutorial/Theme/colors.dart';
+import 'package:tiktok_tutorial/views/screens/Chat/comment_n_chat_sheet.dart';
 
 import 'package:video_player/video_player.dart';
+
+import '../../../Components/custom_button.dart';
 
 RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
 
@@ -183,11 +190,6 @@ class _VideoPageState extends State<VideoPage> with RouteAware {
     } else {
       _controller.pause();
     }
-    var locale = AppLocalizations.of(context)!;
-//    if (_controller.value.position == _controller.value.duration) {
-//      setState(() {
-//      });
-//    }
     if (widget.pageIndex == 2) _controller.pause();
     return Scaffold(
       resizeToAvoidBottomInset: true,
@@ -250,7 +252,7 @@ class _VideoPageState extends State<VideoPage> with RouteAware {
                     '287', onPressed: () {
                   // commentSheet(context);
                   Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => CommentsNChat(
+                    builder: (context) => CommentsNChatSheet(
                         postId: 'postId',
                         isPostComment: false,
                         isProductComment: true),

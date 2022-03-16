@@ -58,7 +58,7 @@ class _ChatListsState extends State<ChatLists> {
                                   chatId: chatHeads[index].userId,
                                   chatNotificationToken:
                                       chatHeads[index].androidNotificationToken,
-                                  heroMsg: chatHeads[index].comment,
+                                  heroMsg: chatHeads[index].comment, isPostComment: false,
                                 ))),
                     child: Container(
                       child: ListTile(

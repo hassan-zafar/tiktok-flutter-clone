@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mozolive/Auth/Login/UI/login_page.dart';
-import 'package:mozolive/Auth/Registration/UI/register_page.dart';
-import 'package:mozolive/Auth/SocialLogin/social_login.dart';
-import 'package:mozolive/Auth/Verification/UI/verification_page.dart';
-import 'package:mozolive/Routes/routes.dart';
 
+import '../../../Routes/routes.dart';
+import 'Login/UI/login_page.dart';
+import 'Registration/UI/register_page.dart';
+import 'SocialLogin/social_login.dart';
+import 'Verification/UI/verification_page.dart';
 GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 class LoginRoutes {
@@ -33,23 +33,23 @@ class LoginNavigator extends StatelessWidget {
         onGenerateRoute: (RouteSettings settings) {
           late WidgetBuilder builder;
           switch (settings.name) {
-            case LoginRoutes.loginRoot:
-              builder = (BuildContext _) => const LoginPage();
-              break;
-            case LoginRoutes.registration:
-              builder = (BuildContext _) => RegisterPage();
-              break;
-            case LoginRoutes.verification:
-              builder = (BuildContext _) => VerificationPage(
-                    () {
-                      Navigator.popAndPushNamed(
-                          context, PageRoutes.bottomNavigation);
-                    },
-                  );
-              break;
-            case LoginRoutes.socialLogin:
-              builder = (BuildContext _) => const SocialLogin();
-              break;
+          //   case LoginRoutes.loginRoot:
+          //     builder = (BuildContext _) => const LoginPage();
+          //     break;
+          //   case LoginRoutes.registration:
+          //     builder = (BuildContext _) => RegisterPage();
+          //     break;
+          //   case LoginRoutes.verification:
+          //     builder = (BuildContext _) => VerificationPage(
+          //           () {
+          //             Navigator.popAndPushNamed(
+          //                 context, PageRoutes.bottomNavigation);
+          //           },
+          //         );
+          //     break;
+          //   case LoginRoutes.socialLogin:
+          //     builder = (BuildContext _) => const SocialLogin();
+          //     break;
           }
           return MaterialPageRoute(builder: builder, settings: settings);
         },

@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // ignore: always_specify_types
-Future showLoadingDislog(BuildContext context) {
+Future showLoadingDialog(BuildContext context) {
   return showDialog(
     context: context,
     builder: (BuildContext context) {

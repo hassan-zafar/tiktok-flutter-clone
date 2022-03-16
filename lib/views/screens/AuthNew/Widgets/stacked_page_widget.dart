@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mozolive/Theme/colors.dart';
+import 'package:tiktok_tutorial/Theme/colors.dart';
 
 // ignore: must_be_immutable
 class StackedPageCounter extends StatefulWidget {

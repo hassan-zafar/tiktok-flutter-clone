@@ -1,7 +1,9 @@
 import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:tiktok_tutorial/Components/custom_button_inter.dart';
 import 'package:tiktok_tutorial/utilities/utilities.dart';
+import 'package:tiktok_tutorial/views/screens/AuthNew/interests_page.dart';
 import 'package:tiktok_tutorial/views/screens/Home/following_tab.dart';
 import 'package:tiktok_tutorial/views/screens/Home/home_page.dart';
 

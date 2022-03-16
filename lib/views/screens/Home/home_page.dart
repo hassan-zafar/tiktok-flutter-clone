@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_tutorial/Theme/colors.dart';
 import 'package:tiktok_tutorial/views/screens/video_screen.dart';
 
 import 'following_tab.dart';
