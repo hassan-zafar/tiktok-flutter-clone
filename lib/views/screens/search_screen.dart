@@ -41,7 +41,7 @@ class SearchScreen extends StatelessWidget {
             : ListView.builder(
                 itemCount: searchController.searchedUsers.length,
                 itemBuilder: (context, index) {
-                  User user = searchController.searchedUsers[index];
+                  AppUserModel user = searchController.searchedUsers[index];
                   return InkWell(
                     onTap: () => Navigator.of(context).push(
                       MaterialPageRoute(
