@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
-import 'package:tiktok_tutorial/constants.dart';
+import 'package:tiktok_tutorial/Constants/constants.dart';
 import 'package:tiktok_tutorial/models/comment.dart';
 
 class CommentController extends GetxController {

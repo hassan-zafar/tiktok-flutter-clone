@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_tutorial/Components/custom_text_button.dart';
+import 'package:tiktok_tutorial/Theme/colors.dart';
+import 'package:tiktok_tutorial/Theme/constants.dart';
+import 'package:tiktok_tutorial/utilities/utilities.dart';
 
+import '../../../Routes/routes.dart';
 
 class ActivityPage extends StatefulWidget {
   const ActivityPage({Key? key}) : super(key: key);
@@ -25,46 +30,45 @@ class _ActivityPageState extends State<ActivityPage> {
 
   @override
   Widget build(BuildContext context) {
-    var locale = AppLocalizations.of(context)!;
     List<Notif> notification = [
       Notif(
           "Emili Williamson",
-          locale.likedYourVideo,
-          "5 " + locale.minAgo!,
+          'Liked Your Video',
+          "5  minute ago",
           "assets/user/user1.png",
           "assets/thumbnails/dance/Layer 951.png",
           Icons.favorite),
       Notif(
           "Kesha Taylor",
-          locale.commentedOnYour,
-          "5 " + locale.minAgo!,
+          "commented On your",
+          "5  minute ago",
           "assets/user/user2.png",
           "assets/thumbnails/dance/Layer 952.png",
           Icons.message),
       Notif(
           "Ling Tong",
-          locale.commentedOnYour,
-          "5 " + locale.minAgo!,
+          "commented On your",
+          "5  minute ago",
           "assets/user/user3.png",
           "assets/thumbnails/food/Layer 783.png",
           Icons.message),
       Notif(
           "Linda Johnson",
-          locale.likedYourVideo,
-          "5 " + locale.minAgo!,
+          'Liked Your Video',
+          "5  minute ago",
           "assets/user/user4.png",
           "assets/thumbnails/food/Layer 786.png",
           Icons.favorite),
-      Notif("George Smith", locale.startedFollowing, "5 " + locale.minAgo!,
+      Notif("George Smith", 'started Following', "5  min Ago",
           "assets/user/user1.png", "assets/images/user.webp", Icons.add),
     ];
 
     List<String?> messages = [
-      locale.heyILikeYourVideos,
-      locale.yesIUse,
-      locale.noWorries,
-      locale.ohThank,
-      locale.alreadyLikedIt,
+      "hey I Like Your Videos",
+      "yes I Use",
+      "no Worries",
+      "oh Thank",
+      "already Liked It",
     ];
     return DefaultTabController(
       length: 2,
