@@ -3,6 +3,7 @@ import 'package:tiktok_tutorial/Components/custom_button_inter.dart';
 import 'package:tiktok_tutorial/Components/rotated_image.dart';
 import 'package:tiktok_tutorial/Routes/routes.dart';
 import 'package:tiktok_tutorial/Theme/colors.dart';
+import 'package:tiktok_tutorial/views/screens/AuthNew/login_navigator.dart';
 import 'package:tiktok_tutorial/views/screens/Chat/comment_n_chat_sheet.dart';
 
 import 'package:video_player/video_player.dart';
