@@ -13,7 +13,7 @@ class AppUserModel {
       required this.email,
       required this.uid,this.isAdmin=false,
       this.androidNotificationToken,
-      required this.profilePhoto});
+      required this.profilePhoto, });
 
   Map<String, dynamic> toJson() => {
         "name": name,

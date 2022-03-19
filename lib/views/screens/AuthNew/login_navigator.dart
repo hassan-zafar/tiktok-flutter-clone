@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../Routes/routes.dart';
 import 'Login/UI/login_page.dart';
 import 'Registration/UI/register_page.dart';
